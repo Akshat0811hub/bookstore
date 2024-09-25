@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Novels</title>
+    <link rel="stylesheet" href="rom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="img"><img src="/img/logo.png" alt=""></div>
+    
+
+        <div class="search-container"></div>
+            <div class="search-bar">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Category <i class="fa-solid fa-chevron-down"></i></button>
+                <ul class="dropdown-content" id="categoryDropdown">
+                  <li><a href="http://127.0.0.1:5500/index.html">All</a></li>
+                  <li><a href="http://127.0.0.1:5500/Horror/hor.html">Horror</a></li>
+                  <li><a href="http://127.0.0.1:5500/crime/crime.html">Crime</a></li>
+                  <li><a href="http://127.0.0.1:5500/romantic/rom.html">Romantic</a></li>
+                  <li><a href="http://127.0.0.1:5500/mystery/myst.html">Mystery</a></li>
+
+                </ul>
+              </div>
+              <input type="text" placeholder="Search Amazon" class="search-input">
+              <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="returns">
+            <h3>Returns & <br><span>Orders</span></h3>
+        </div>
+        <div class="cart">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Cart</h3>
+        </div>
+    </div>
+
+
+    <!-- <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="./img" alt="">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="./img/template 3.png" alt="template 2">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="./img/templete 1.png" alt="template 3">
+        </div>
+      </div> -->
+      <br>
+    
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    
+    <div class="books">
+        <h2>Romantic Collections</h2>
+
+      <div class="skills-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="skill-box hover-effect" id="crime1">
+          <img src="/img/romantic/romantic1.jpg"/>
+          <p>Best Romance Novels</p>
+        </div>
+        <div class="skill-box hover-effect" id="crime2">
+          <img src="/img/romantic/romantic2.jpeg" alt=""/>
+          <p>Technically Yours</p>
+        </div>
+        <div class="skill-box hover-effect">
+          <img src="/img/romantic/romantic3.webp" alt=""/>
+          <p>You've reached sam</p>
+        </div>
+        <br>
+        <div class="skill-box hover-effect">
+          <img src="/img/romantic/romantic4.jpeg" alt=""/>
+          <p>Love Theoritically</p>
+        </div>
+        <div class="skill-box hover-effect">
+          <img src="/img/romantic/romantic5.jpg" alt=""/>
+          <p>Love on the Brain</p>
+        </div>
+        <div class="skill-box hover-effect">
+          <img src="/img/romantic/romantic6.jpeg" alt=""/>
+          <p>Tall Duke and Dangerous</p>
+        </div>
+        <div class="skill-box hover-effect">
+          <img src="/img/romantic/romantic7.jpeg" alt=""/>
+          <p>Greatest love Stories</p>
+        </div>
+    
+</body>
+</html>

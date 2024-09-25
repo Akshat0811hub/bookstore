@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="img"><img src="img/logo.png" alt=""></div>
+    
+
+        <div class="search-container"></div>
+            <div class="search-bar">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Category <i class="fa-solid fa-chevron-down"></i></button>
+                <ul class="dropdown-content" id="categoryDropdown">
+                  <li><a href="http://127.0.0.1:5500/index.html">All</a></li>
+                  <li><a href="http://127.0.0.1:5500/Horror/hor.html">Horror</a></li>
+                  <li><a href="http://127.0.0.1:5500/crime/crime.html">Crime</a></li>
+                  <li><a href="http://127.0.0.1:5500/romantic/rom.html">Romantic</a></li>
+                  <li><a href="http://127.0.0.1:5500/mystery/myst.html">Mystery</a></li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Search Amazon" class="search-input">
+              <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="returns">
+            <h3>Returns & <br><span>Orders</span></h3>
+        </div>
+        <div class="cart">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Cart</h3>
+        </div>
+    </div>
+
+
+    <header class='header'>
+  
+    </header>
+    
+    <section id="section1">
+      <!-- Slideshow container -->
+    <div class="slideshow-container">
+    
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/Crime/crime2.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/img/Horror/horror1.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/Crime/crime1.webp" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+   
+    
+    
+      
+    
+    <div class="books">
+        <h2>Our Collections</h2>
+
+      <div class="skills-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="skill-box hover-effect" id="crime1">
+          <img src="img/Crime/crime1.webp"/>
+          <p>The Girl in the Pink Shoes</p>
+        </div>
+        <div class="skill-box hover-effect" id="crime2">
+          <img src="img/Crime/crime2.jpg" alt=""/>
+          <p>True Crime</p>
+        </div>
+        <div class="skill-box hover-effect">
+          <img src="img/Crime/crime3.jpg" alt=""/>
+          <p>One Crime Story</p>
+        </div>
+        <br>
+        <div class="skill-box hover-effect">
+          <img src="img/Crime/crime4.jpg" alt=""/>
+          <p>Serial Killers</p>
+        </div>
+        <div class="skill-box hover-effect">
+          <img src="img/Crime/crime5.webp" alt=""/>
+          <p>Tamil Thrill</p>
+        </div>
+        <div class="skill-box hover-effect">
+            <img src="img/Crime/crime6.jpeg" alt=""/>
+            <p>Black Water Rising</p>
+          </div>
+          <div class="skill-box hover-effect" id="crime7">
+            <img src="img/Crime/crime7.jpeg" alt=""/>
+            <p>Devil in the White City</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/Crime/crime8.webp" alt=""/>
+            <p>The Girl in room 105</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/Horror/horror1.jpg" alt=""/>
+            <p>Black Forest</p>
+          </div>
+          <div class="skill-box hover-effect" id="horror2">
+            <img src="img/Horror/horror2.jpg" alt=""/>
+            <p>Night of Terror</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/Horror/horror3.jpg" alt=""/>
+            <p>Sam</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/Horror/horror5.jpg" alt=""/>
+            <p>Horror of the Nights</p>
+          </div>
+          <div class="skill-box hover-effect" id="romantic1">
+            <img src="img/romantic/romantic1.jpg" alt=""/>
+            <p>Best Romance</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/romantic/romantic2.jpeg" alt=""/>
+            <p>Technically Yours</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/romantic/romantic3.webp" alt=""/>
+            <p>You've reached Sam</p>
+          </div>
+          <div class="skill-box hover-effect" id="romantic4">
+            <img src="img/romantic/romantic4.jpeg" alt=""/>
+            <p>Love Theoretically</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/romantic/romantic5.jpg" alt=""/>
+            <p>Love on the brain</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/romantic/romantic6.jpeg" alt=""/>
+            <p>Frampion</p>
+          </div>
+          <div class="skill-box hover-effect" id="romantic7">
+            <img src="img/romantic/romantic7.jpeg" alt=""/>
+            <p>Love Stories</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/Horror/horror6.jpeg" alt=""/>
+            <p>Anna dressed in Blood</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/Horror/horror8.jpeg" alt=""/>
+            <p>The reddening</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/Mystery1.jpg" alt=""/>
+            <p>The Red Lotus</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/Mystery2.jpg" alt=""/>
+            <p>Murder Mystery</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/mystery3.jpg" alt=""/>
+            <p>The Last Draft</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/mystery4.jpg" alt=""/>
+            <p>Little Secrets</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/Mystery5.jpg" alt=""/>
+            <p>Silent Sister</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/mystery6.jpg" alt=""/>
+            <p>The Hidden People</p>
+          </div>
+          <div class="skill-box hover-effect">
+            <img src="img/mystery/mystery7.jpg" alt=""/>
+            <p>Mystery Series Week</p>
+          </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+          <a href="#top">Back to top</a>
+      </div>
+
+      <div class="footer-links">
+          <div class="footer-column">
+              <h4>Get to Know Us</h4>
+              <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Press Releases</a></li>
+                  <li><a href="#">Bookstore Cares</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column">
+              <h4>Make Money with Us</h4>
+              <ul>
+                  <li><a href="#">Sell on Bookstore</a></li>
+                  <li><a href="#">Bookstore Global Selling</a></li>
+                  <li><a href="#">Become an Affiliate</a></li>
+                  <li><a href="#">Fulfillment by Bookstore</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column">
+              <h4>Bookstore Payment</h4>
+              <ul>
+                  <li><a href="#">Bookstore Pay</a></li>
+                  <li><a href="#">Credit Cards</a></li>
+                  <li><a href="#">EMI on Products</a></li>
+                  <li><a href="#">Gift Cards</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column">
+              <h4>Let Us Help You</h4>
+              <ul>
+                  <li><a href="#">Your Account</a></li>
+                  <li><a href="#">Returns Centre</a></li>
+                  <li><a href="#">100% Purchase Protection</a></li>
+                  <li><a href="#">Help</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer-bottom">
+          
+          <div class="footer-legal">
+              <a href="#">Privacy Notice</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Cookies Notice</a>
+          </div>
+      </div>
+  </footer>
+</body>
+<script src="book.js"></script>
+</html>
