@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <link rel="stylesheet" href="/books/crime/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="img"><img src="/img/logo.png" alt=""></div>
+    
+
+        <div class="search-container"></div>
+            <div class="search-bar">
+              <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown()">Category <i class="fa-solid fa-chevron-down"></i></button>
+                <ul class="dropdown-content" id="categoryDropdown">
+                  <li><a href="http://127.0.0.1:5500/index.html">All</a></li>
+                  <li><a href="http://127.0.0.1:5500/Horror/hor.html">Horror</a></li>
+                  <li><a href="http://127.0.0.1:5500/crime/crime.html">Crime</a></li>
+                  <li><a href="http://127.0.0.1:5500/romantic/rom.html">Romantic</a></li>
+                  <li><a href="http://127.0.0.1:5500/mystery/myst.html">Mystery</a></li>
+                </ul>
+              </div>
+              <input type="text" placeholder="Search Amazon" class="search-input">
+              <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="returns">
+            <h3>Returns & <br><span>Orders</span></h3>
+        </div>
+        <div class="cart">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Cart</h3>
+        </div>
+    </div>
+
+
+    <div class="book">
+            <div class="photo">
+                <img src="/img/Horror/horror3.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="text"><br><br><br>
+                <h1>SAM</h1><br><h7><span>by</span>IAIN ROB WRIGHT</h7><br>
+                <br><p>(Rating by Good Reads)</p><br><i class="fa-solid fa-star" style="color: #ffffff;"></i><i class="fa-solid fa-star" style="color: #ffffff;"></i><i class="fa-solid fa-star" style="color: #ffffff;"></i><i class="fa-solid fa-star-half-stroke" style="color: #ffffff;"></i><i class="fa-regular fa-star"></i>
+                <br><br><s>Rs.699</s>&nbsp;&nbsp;Rs329 &nbsp;&nbsp;<Span>Save 52%</Span><br><br><h3>ONLY 1 LEFT IN STOCK</h3>
+                <br><h3>Binding:Paperback</h3>
+                </div><br><br><br>
+                <div class="bookbutton">
+                    <button class="addtocart"><h7>Add To Cart</h7></button>
+                    <div class="flex ">
+                      <button class="buynow"><h7>Buy Now</h7></button>
+                      <button class="shortlist">
+                         <h7>Shortlist</h7>
+                      </button>
+                    </div>
+                  </div>
+                  
+            </div>
+
+    </div>
+
+    
+
+
